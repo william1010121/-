@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> 決策器實作 </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="./main.js"></script>
+    </head>
+
+    <body>
+        <header> 決策器 </header>
+        <div class="input_mid">
+            <input type="text" placeholder="請輸入事件" id="input_todo" onchange="add_todo_list()"> 
+            <div id="counter">0</div>
+            <button onclick="start_decide()">開始決策</button>
+            <button onclick="init()">重新開始</button>
+        </div>
+        <center id = "judge_event" hidden="true">
+            <div> 請使用 '<' 或 '>' 來比大小</div>
+            <div class=input_mid> 
+                <p id="event_judge_1">event_1<p>
+                <input maxlength="1" minlength="1" class="one_block_input" id="get_judge_event_input">
+                <p id="event_jduge_2">event_2</p>
+            </div>
+        </center>
+        <center>
+            <div> 新增事件 </div>
+            <table name="to_do_list_table">
+                <tbody>
+                </tbody>
+            </table>
+        </center>
+        
+        <hr> 
+        <center>
+            <div> 優先順序 </div>
+            <table>
+                <tbody name="result_table">
+
+                </tbody>
+            </table>
+        </center>
+
+    </body>
+</html>

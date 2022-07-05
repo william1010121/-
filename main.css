@@ -1,0 +1,49 @@
+body {
+    font-family: "標楷體";
+    background-color: rgb(255, 219, 41);
+}
+
+.input_mid {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    /*border: 1px solid rgb(255, 0, 0)*/
+}
+
+.input_mid * {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+center {
+    margin-top: 30px;
+}
+center > * {
+    margin-top: 15px;
+}
+.one_block_input {
+    margin: auto;
+    width:30px;
+    height:30px;
+}
+header {
+    text-align: center;
+    margin:auto;
+    font-size: 60px;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 200px;
+    background-color: #fff;
+}
+
+
+td {
+    margin: 0px, 0px, 0px, 0px;
+    /*border: 1px solid rgb(255, 0, 0);*/
+}
+
+table {
+    /*border: 1px solid rgb(255, 0, 0);*/
+    border-radius: 3px;
+}
