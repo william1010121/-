@@ -20,9 +20,9 @@ function judge_event(event_1, event_2) {
     let judge_event2 = document.getElementById('event_judge_2')
     judge_event1 = event_1
     judge_event2 = event_2
-    let check = prompt( event_1 + " v.s. "+ event_2) 
-    console.log( check )
-    if( check === ">" ) {
+    let check = confirm( event_1 + " v.s. "+ event_2) 
+    //console.log( check )
+    if( check ) {
         return "event1 > event2"
     }
     else 
@@ -65,7 +65,7 @@ async function start_merge_sort( list, l, r) {
         list_tmp[i] = list[i];
 }
 function start_decide(){
-    alert("請比較每兩個事件，使用 '<'、'>' 進行比較")
+    alert("請比較每兩個事件,哪邊比較大就按哪邊的按鈕")
     //judge_thing.hidden = false
     //console.log ( 123 )
     //console.log( event_list )
@@ -83,6 +83,7 @@ function start_decide(){
 
 function show_result( list )  {
     let table = document.getElementsByName('result_table')[0]
+    table.innerHTML = ""
     for( i in list) {
         let row = document.createElement('tr')
         let col = document.createElement('td')
