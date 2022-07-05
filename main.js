@@ -65,7 +65,7 @@ async function start_merge_sort( list, l, r) {
         list_tmp[i] = list[i];
 }
 function start_decide(){
-    alert("請比較每兩個事件,哪邊比較大就按哪邊的按鈕")
+    alert("請比較每兩個事件,如果左邊的事件較優先則按確認，反之按取消")
     //judge_thing.hidden = false
     //console.log ( 123 )
     //console.log( event_list )
